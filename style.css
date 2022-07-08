@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    font-family: sans-serif;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section1 {
+    display: grid;
+    place-items: center;
+}
+
+.section1 button, .section2 button {
+    padding: 1.5rem;
+    box-shadow: 0 0 6px 0 white;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.buttons, .buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    height: 75px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 white;
+}
+
+
+.section h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section h1 span:nth-child(2n) {
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateY(-100px);
+    display: inline-block;
+}
+
+.section h1 span:nth-child(2n-1) {
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateY(100px);
+    display: inline-block;
+}
+
+.section .fadeMove {
+    transform: translate(0) !important;
+    opacity: 1 !important;
+}
+
+.section .fadeMove2 {
+    transform: translate(0) !important;
+    opacity: 1 !important;
+    color: dodgerblue;
+}
+
+/* Slike */
+
+.section2 .images {
+    display: flex;
+}
+
+.section2 {
+    overflow: hidden;
+}
+
+.section2 .images img {
+    width: 50%;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.section2 .images img.slideFromLeft {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.section2 .images img.slideFromRight{
+    transform: translateX(50%) rotate(45deg);
+}
+
+.section2 .images img.animated {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+}
+
+.section2 h3 {
+    line-height: 1.2;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.border-line {
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.poseban {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
